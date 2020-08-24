@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../exercicio4/myscript.js"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastre seu currículo</h1>
+    </header>
+
+    <form name="cadastro" autocomplete="off" action="enviarDados" method="post">
+        <!--1.Dados Pessoais-->
+        <table>
+            <h3>1. Dados Pessoais</h3>
+
+            <!--Linha 1-->
+            <tr>
+                <td class="td1">Nome</td>
+                <td class="td2"><input type="text" name="nome" required placeholder="Digite seu nome" class="in1" /></td>
+            </tr>
+
+            <!--Linha 2-->
+            <tr>
+                <td class="td1">Data de Nascimento</td>
+                <td class="td2"><input type="date" name="data_nascimento" class="in1" /></td>
+            </tr>
+
+            <!--Linha 3-->
+            <tr>
+                <td class="td1">Estado Civil</td>
+                <td class="td2">
+                    <select name="estado_civil" class="in1">
+                        <!--Como fazer um placeholder para select-->
+                        <option value="" selected disabled hidden>Selecione o estado civil</option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="viuvo">viúvo(a)</option>
+                        <option value="divorciado">divorciado(a)</option>
+                    </select>
+                    <span class="vermelho" id="mensagem1"></span>
+                </td>
+
+            </tr>
+
+            <!--Linha 4-->
+            <tr>
+                <td class="td1">Sexo</td>
+                <td class="td2">
+                    <input type="radio" name="sexo" value="male" />Masculino
+                    <input type="radio" name="sexo" value="female" />Feminino
+                </td>
+            </tr>
+        </table>
+
+        <!--2.Obejetivo-->
+        <table>
+            <h3>2. Objetivo</h3>
+            <tr>
+                <td class="td1">Objetivo</td>
+                <td class="td2"><textarea name="objetivo1" cols="50" rows="2" placeholder="Digite seu objetivo" class="in1" required></textarea></td>
+            </tr>
+        </table>
+
+        <!--3.Contato-->
+        <table>
+            <h3>3. Contato</h3>
+
+            <!--Linha 1-->
+            <tr>
+                <td class="td1">Endereço</td>
+                <td class="td2"><input type="text" required placeholder="Digite seu endereço" class="in1"></td>
+            </tr>
+
+            <!--Linha 2-->
+            <tr>
+                <td class="td1">Cidade/Estado</td>
+                <td class="td2">
+                    <input type="text" required placeholder="Digite sua cidade"> /
+                    <input type="text" required placeholder="Digite seu estado" pattern="[A-Z]{2}" />
+                </td>
+            </tr>
+
+            <!--Linha 3-->
+            <tr>
+                <td class="td1">CEP</td>
+                <td class="td2"><input type="text" required placeholder="Digite seu CEP no formato 99999-999" pattern="[0-9]{5}[\-][0-9]{3}" class="in1"></td>
+            </tr>
+
+            <!--Linha 4-->
+            <tr>
+                <td class="td1">Telefone</td>
+                <td class="td2">
+                    <input type="tel" name="telefone" placeholder="Digite seu telefone no formato (99) 9999-9999" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" class="in1">
+                </td>
+            </tr>
+
+            <!--Linha 5-->
+            <tr>
+                <td class="td1">E-mail</td>
+                <td class="td2">
+                    <input type="email" name="email" placeholder="Digite seu email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="in1" />
+                </td>
+            </tr>
+
+            <!--Linha 6-->
+            <tr>
+                <td class="td1">Rede Social</td>
+                <td class="td2">
+                    <img src="./imagens/face.png"> http://facebook.com/ <input type="text" placeholder="Perfil facebook"><br>
+                    <img src="./imagens/linkedin.png"> http://linkedin.com/ <input type="text" placeholder="Perfil linkedin"><br>
+                    <img src="./imagens/twitter.png"> http://twitter.com/ <input type="text" placeholder="Perfil twitter"><br>
+
+                </td>
+            </tr>
+
+        </table>
+
+        <!--4.Conhecimento-->
+        <table>
+            <h3>4. Conhecimentos</h3>
+
+            <!--Linha 1-->
+            <tr>
+                <td class="td1">Linguagens de Programação</td>
+                <td class="td2">
+                    <input type="checkbox" id="check1" name="ling" value="c/c++" />C/C++<br>
+                    <input type="checkbox" id="check2" name="ling" value="java" />Java<br>
+                    <input type="checkbox" id="check3" name="ling" value="vb" />Visual Basic<br>
+                    <input type="checkbox" id="check4" name="ling" value=".net" />.NET<br>
+                    <input type="checkbox" id="check5" name="ling" value="php" />PHP<br>
+                    <input type="checkbox" id="check6" name="ling" value="py" />Python<br>
+                    <input type="checkbox" id="check7" name="ling" value="html" />HTML<br>
+                </td>
+            </tr>
+
+            <!--Linha 2-->
+            <tr>
+                <td class="td1">Idiomas</td>
+                <td class="td2">
+                    Inglês
+                    <select name="idioma_ingles" aria-placeholder="Nivel">
+                        <option value="" selected disabled hidden>Selecione o nivel</option>
+                        <option value="semexp">Sem experiencia</option>
+                        <option value="bas">Basico</option>
+                        <option value="med">Intermediario</option>
+                        <option value="avan">Avançado</option>
+                    </select> Espanhol
+                    <select name="idioma_espanhol" aria-placeholder="Nivel">
+                        <option value="" selected disabled hidden>Selecione o nivel</option>
+                        <option value="semexp">Sem experiencia</option>
+                        <option value="bas">Basico</option>
+                        <option value="med">Intermediario</option>
+                        <option value="avan">Avançado</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Limpar" class="buttons" onclick="limpar();">
+        <input type="submit" value="Enviar" class="buttons" onclick="enviarDados();">
+    </form>
+
+
+
+</body>
+
+</html>

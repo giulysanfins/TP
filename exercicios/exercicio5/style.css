@@ -1,0 +1,79 @@
+tr,
+th,
+td {
+    border: solid 0.08em;
+    text-align: left;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: left;
+    color: #0d1c72;
+    margin-left: 15%;
+}
+
+h3 {
+    font-weight: 600;
+    text-align: left;
+    color: #0d1c72;
+    margin-left: 15%;
+}
+
+table {
+    text-align: left;
+    align-items: center;
+    width: 72%;
+    margin-left: 15%;
+}
+
+.td1 {
+    background-color: #a8a8a8;
+    width: 40%;
+    font-size: calc(1em+1vw);
+    color: #1933c8;
+    text-align: left;
+    font-weight: bold;
+}
+
+.td2 {
+    background-color: #dadada;
+    width: 40%;
+    font-size: calc(1em+1vw);
+    color: #000000;
+    text-align: left;
+}
+
+.vermelho {
+    color: red;
+}
+
+.buttons {
+    background-color: #1933c8;
+    width: 5%;
+    font-size: calc(1em+1vw);
+    color: #ffffff;
+    text-align: justify;
+    margin-left: 15%;
+}
+
+.in1 {
+    width: 90%;
+}
+
+input:required:invalid,
+input:focus:invalid,
+textarea:required:invalid,
+textarea:focus:invalid {
+    background: url("./imagens/wrong.gif") no-repeat;
+    background-position: right;
+}
+
+input:required:valid,
+textarea:required:valid {
+    background: url("./imagens/check.png") no-repeat;
+    background-position: right;
+}
+
+textarea {
+    resize: none;
+}
