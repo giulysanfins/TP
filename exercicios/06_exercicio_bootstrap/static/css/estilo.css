@@ -203,6 +203,67 @@ textarea {
     resize: none;
 }
 
+
+/*============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+
+.container1 {
+    /*   max-width: 960px; */
+    margin: 100px auto;
+}
+
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section.module p:last-child {
+    margin-bottom: 0;
+}
+
+section.module.content {
+    padding: 40px;
+}
+
+section.module.parallax {
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3em;
+    line-height: 300px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+    background-image: url("../images/Palestra_ibc.jpg");
+}
+
 @-webkit-keyframes glow {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d6da02, 0 0 40px #d6da02, 0 0 50px #d6da02;
