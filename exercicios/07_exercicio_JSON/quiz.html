@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="public/css/.css" rel="stylesheet">-->
+    <!--JQuery -->
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+
+    <link href="public/css/mystyle.css" rel="stylesheet">
+    <!--JSON-->
+    <script type="text/javascript" src="public/jsons/quiz.json" charset="utf-8"></script>
+    <!--JS-->
+    <script src="public/js/script.js"></script>
+    <!--Title-->
+    <title>Quiz</title>
+</head>
+
+<body>
+    <header>
+        <script>
+            window.onload = function() {
+                nextQuestion();
+            };
+        </script>
+    </header>
+
+    <!-- Imagem da pergunta -->
+
+    <div class="row">
+        <!-- Pergunta -->
+        <div class="col-12 text-center font-weight-bold text-light" id="quesTxt" style="padding-top: 0.8rem;">Você sabe qual 'nome do quiz (ex:jogo)' é esse ? Pergunta 1/10"</div>
+        <div class="col-12 text-center font-weight-bold text-light" id="pontuacao" style="padding-top: 0.8rem;"> Pontuacao 0 / 10
+        </div>
+        <!-- Imagem principal-->
+        <div class="col-12 text-center" id="displayText" style="padding: 3rem 0;"></div>
+    </div>
+
+    <div class="row">
+        <!-- respostas-->
+        <!-- resposta 01-->
+        <div id="divres1" class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+            <a id="res1" class="btn btn-dark btn-block text-light" onclick="qualApertei('res1')"></a>
+        </div>
+        <!-- resposta 02-->
+        <div class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+            <a id="res2" class="btn btn-dark btn-block text-light" onclick="qualApertei('res2')"></a>
+        </div>
+        <!-- resposta 02-->
+        <div class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+            <a id="res3" class="btn btn-dark btn-block text-light" onclick="qualApertei('res3')"></a>
+        </div>
+        <!-- resposta 04-->
+        <div class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+            <a id="res4" class="btn btn-dark btn-block text-light" onclick="qualApertei('res4')"></a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- top 3 -->
+        <div class="row">
+            <!-- item 1 -->
+            <div class="col-lg-4 col-12">
+                <!-- modal -->
+                <div id="contmod1" class="modal fade" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                            <!-- título -->
+                            <div class="modal-header">
+                                <h4>A sua pontuação é de: </h4>
+                                <span id="countdown" class="font-weight-bold display-4">10</span><span id="plural"></span>
+                            </div>
+
+                            <!-- conteudo -->
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- Pontuacao-->
+                                        <p id="pontos" class="text-center font-weight-bold display-3"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,36 @@
+.padbase {
+    padding-top: 0.4em;
+    padding-bottom: 1.1em;
+}
+
+.padcard {
+    padding-top: 3rem;
+}
+
+#padcard1 {
+    padding-top: 1rem;
+}
+
+#padcard2 {
+    padding-top: 2.4rem;
+}
+
+.teste {
+    padding: 8%;
+    background: linear-gradient(90deg, #000000 0%, #1E3A7E 100%);
+}
+
+.backzin {
+    background: linear-gradient(90deg, #000000 0%, #1E3A7E 100%);
+}
+
+.borda{
+  border: #fff solid 5px;
+  border-radius: 10%;
+  margin: 15px;
+  box-shadow: 0px 0px 0px 1px #fff inset;
+}
+
+body{
+    background:linear-gradient(90deg,#000000 0%,#1E3A7E 100%);
+}

@@ -1,0 +1,11 @@
+.titulo {
+    font-family: Calibri;
+    color: blue;
+}
+
+tr,
+th,
+td {
+    border: solid 0.5em;
+    text-align: left;
+}

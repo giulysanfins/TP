@@ -1,0 +1,327 @@
+var games = [{
+    "nome": "img1",
+    "link": "public/imgs/jogos/amg.png",
+    "resposta": "res1",
+    "res1": "Among Us",
+    "res2": "Sonic",
+    "res3": "Fall Guys",
+    "res4": "Pummel Party"
+}, {
+    "nome": "img2",
+    "link": "public/imgs/jogos/cofc.png",
+    "resposta": "res2",
+    "res1": "Clash Royale",
+    "res2": "Clash Of Clans",
+    "res3": "Age Of Empires",
+    "res4": "HearthStone"
+}, {
+    "nome": "img3",
+    "link": "public/imgs/jogos/dt.png",
+    "resposta": "res1",
+    "res1": "Dota 2",
+    "res2": "League of Legends",
+    "res3": "World of Warcraft",
+    "res4": "Mobile Legends"
+}, {
+    "nome": "img4",
+    "link": "public/imgs/jogos/g1.png",
+    "resposta": "res4",
+    "res1": "Fortnite",
+    "res2": "PUBG",
+    "res3": "Call Of Duty",
+    "res4": "Free Fire"
+}, {
+    "nome": "img5",
+    "link": "public/imgs/jogos/hl.png",
+    "resposta": "res3",
+    "res1": "Celeste",
+    "res2": "Ori",
+    "res3": "Hollow Knight",
+    "res4": "Cup Head"
+}, {
+    "nome": "img6",
+    "link": "public/imgs/jogos/Lol.png",
+    "resposta": "res1",
+    "res1": "League of Legeds",
+    "res2": "Dota 2",
+    "res3": "Diablo",
+    "res4": "Mobile Legends"
+}, {
+    "nome": "img7",
+    "link": "public/imgs/jogos/mk.png",
+    "resposta": "res3",
+    "res1": "Forza",
+    "res2": "Sonic All Stars",
+    "res3": "Mario Kart",
+    "res4": "Mario Party"
+}, {
+    "nome": "img8",
+    "link": "public/imgs/jogos/pac.png",
+    "resposta": "res1",
+    "res1": "PacMan",
+    "res2": "PinBall",
+    "res3": "Tetris",
+    "res4": "TrickTowers"
+}, {
+    "nome": "img9",
+    "link": "public/imgs/jogos/sc.png",
+    "resposta": "res1",
+    "res1": "Sonic",
+    "res2": "Speed Racer",
+    "res3": "Crash Bandicoot",
+    "res4": "Mario Party"
+}, {
+    "nome": "img10",
+    "link": "public/imgs/jogos/sub.png",
+    "resposta": "res1",
+    "res1": "Subway Surfers",
+    "res2": "Temple Run",
+    "res3": "Flappy Bird",
+    "res4": "Pokemon GO"
+}];
+
+var filmes = [{
+    "nome": "img11",
+    "link": "public/imgs/filmes/avengers.jpg",
+    "resposta": "res1",
+    "res1": "The Avengers",
+    "res2": "Hobbit",
+    "res3": "Liga da Justiça",
+    "res4": "The Boys"
+}, {
+    "nome": "img12",
+    "link": "public/imgs/filmes/carros.jpg",
+    "resposta": "res2",
+    "res1": "Os Aviões",
+    "res2": "Os Carros",
+    "res3": "Herbie - Meu Fusca Turbinado",
+    "res4": "Speed Racer"
+}, {
+    "nome": "img13",
+    "link": "public/imgs/filmes/chucky.jpg",
+    "resposta": "res1",
+    "res1": "Brinquedo Assassino",
+    "res2": "Boneco do Mal",
+    "res3": "Invocação do Mal",
+    "res4": "It - A Coisa"
+}, {
+    "nome": "img14",
+    "link": "public/imgs/filmes/coringa.jpg",
+    "resposta": "res4",
+    "res1": "O Bozo",
+    "res2": "Aves de Rapina",
+    "res3": "Batman",
+    "res4": "Coringa"
+}, {
+    "nome": "img15",
+    "link": "public/imgs/filmes/transformers.jpg",
+    "resposta": "res3",
+    "res1": "Start Trek",
+    "res2": "Círculo de Fogo",
+    "res3": "Transformers",
+    "res4": "G.I JOE"
+}, {
+    "nome": "img16",
+    "link": "public/imgs/filmes/labirinto.jpg",
+    "resposta": "res1",
+    "res1": "O Labirinto do Fauno",
+    "res2": "O Espírito da Colmeia",
+    "res3": "Hellboy",
+    "res4": "Pinóquio"
+}, {
+    "nome": "img17",
+    "link": "public/imgs/filmes/mrrobot.jpg",
+    "resposta": "res3",
+    "res1": "Snowden",
+    "res2": "O Hacker",
+    "res3": "Mr Robot",
+    "res4": "V de Vingança"
+}, {
+    "nome": "img18",
+    "link": "public/imgs/filmes/peaky.jpg",
+    "resposta": "res1",
+    "res1": "Peaky Blinders",
+    "res2": "O Poderoso Chefão",
+    "res3": "Sherlock Holmes",
+    "res4": "O Irlandês"
+}, {
+    "nome": "img19",
+    "link": "public/imgs/filmes/starwars.jpg",
+    "resposta": "res1",
+    "res1": "Star Wars",
+    "res2": "Star Trek",
+    "res3": "Perdidos no Espaço",
+    "res4": "Interestelar"
+}, {
+    "nome": "img20",
+    "link": "public/imgs/filmes/thrones.jpg",
+    "resposta": "res1",
+    "res1": "Game of Thrones",
+    "res2": "Vikings",
+    "res3": "Assassin's Screed",
+    "res4": "Troia"
+}];
+
+var animes = [{
+    "nome": "img21",
+    "link": "public/imgs/animes/attack.jpg",
+    "resposta": "res1",
+    "res1": "Attack on Titans",
+    "res2": "Dororo",
+    "res3": "Vinland Saga",
+    "res4": "Berserk"
+}, {
+    "nome": "img22",
+    "link": "public/imgs/animes/boku.jpg",
+    "resposta": "res2",
+    "res1": "Black Clover",
+    "res2": "Boku no Hero",
+    "res3": "Hunter x Hunter",
+    "res4": "The God of Highschool"
+}, {
+    "nome": "img23",
+    "link": "public/imgs/animes/dball.jpg",
+    "resposta": "res1",
+    "res1": "Dragon Ball Z",
+    "res2": "Bleach",
+    "res3": "Naruto",
+    "res4": "Baki"
+}, {
+    "nome": "img24",
+    "link": "public/imgs/animes/death.jpg",
+    "resposta": "res4",
+    "res1": "O Bozo",
+    "res2": "Tokyo Ghoul",
+    "res3": "Fullmetal Alchemist",
+    "res4": "Death Note"
+}, {
+    "nome": "img25",
+    "link": "public/imgs/animes/haikyu.jpg",
+    "resposta": "res3",
+    "res1": "Corra com o vento",
+    "res2": "Super Onze",
+    "res3": "Haikyuu",
+    "res4": "Kuroko no Basket"
+}, {
+    "nome": "img26",
+    "link": "public/imgs/animes/hunter.jpg",
+    "resposta": "res1",
+    "res1": "Hunter x Hunter",
+    "res2": "One Piece",
+    "res3": "Naruto",
+    "res4": "Boku no Hero"
+}, {
+    "nome": "img27",
+    "link": "public/imgs/animes/naruto.jpg",
+    "resposta": "res3",
+    "res1": "Snowden",
+    "res2": "O Hacker",
+    "res3": "Naruto",
+    "res4": "V de Vingança"
+}, {
+    "nome": "img28",
+    "link": "public/imgs/animes/one.jpg",
+    "resposta": "res1",
+    "res1": "One Punch Man",
+    "res2": "JoJo",
+    "res3": "Hunter x Hunter",
+    "res4": "Mob Pyscho"
+}, {
+    "nome": "img29",
+    "link": "public/imgs/animes/onepiece.jpg",
+    "resposta": "res1",
+    "res1": "One Piece",
+    "res2": "Kimetsu no Yaiba",
+    "res3": "Naruto",
+    "res4": "The Promised Neverland"
+}, {
+    "nome": "img30",
+    "link": "public/imgs/animes/tokyo.jpg",
+    "resposta": "res1",
+    "res1": "Tokyo Ghoul",
+    "res2": "Fairy Tail",
+    "res3": "Attack on Titans",
+    "res4": "Death Note"
+}];
+
+var musicas = [{
+    "nome": "img31",
+    "link": "public/imgs/musicas/ArcticMonkeys.png",
+    "resposta": "res1",
+    "res1": "Artic Monkey",
+    "res2": "Beatles",
+    "res3": "Adele",
+    "res4": "The Strokes"
+}, {
+    "nome": "img32",
+    "link": "public/imgs/musicas/beatles.png",
+    "resposta": "res2",
+    "res1": "PowerWolf",
+    "res2": "Beatles",
+    "res3": "Oasis",
+    "res4": "Daft Punk"
+}, {
+    "nome": "img33",
+    "link": "public/imgs/musicas/Adele.png",
+    "resposta": "res1",
+    "res1": "Adele",
+    "res2": "Katy Perry",
+    "res3": "Sia",
+    "res4": "Lady Gaga"
+}, {
+    "nome": "img34",
+    "link": "public/imgs/musicas/daftpunk.png",
+    "resposta": "res4",
+    "res1": "The Weekend",
+    "res2": "Avicii",
+    "res3": "Marshmello",
+    "res4": "Daft Punk"
+}, {
+    "nome": "img35",
+    "link": "public/imgs/musicas/imagineDragons.png",
+    "resposta": "res3",
+    "res1": "Coldplay",
+    "res2": "Maroon 5",
+    "res3": "Imagine Dragons",
+    "res4": "Linking Park"
+}, {
+    "nome": "img36",
+    "link": "public/imgs/musicas/legiaourbana.png",
+    "resposta": "res1",
+    "res1": "Legião Urbana",
+    "res2": "Coldplay",
+    "res3": "The Prodigy",
+    "res4": "David Guetta"
+}, {
+    "nome": "img37",
+    "link": "public/imgs/musicas/michaeljackson.png",
+    "resposta": "res3",
+    "res1": "Elvis Presley",
+    "res2": "Amy Winehouse",
+    "res3": "Michael Jackson",
+    "res4": "Madonna"
+}, {
+    "nome": "img38",
+    "link": "public/imgs/musicas/oficinag3.png",
+    "resposta": "res1",
+    "res1": "Oficina G3",
+    "res2": "Rosa de Saron",
+    "res3": "Iahweh",
+    "res4": "Rodolfo Abrantes"
+}, {
+    "nome": "img39",
+    "link": "public/imgs/musicas/pinkyFloyd.png",
+    "resposta": "res1",
+    "res1": "Pink Floyd",
+    "res2": "Os Beatles",
+    "res3": "AC/DC",
+    "res4": "Led Zeppelin"
+}, {
+    "nome": "img40",
+    "link": "public/imgs/musicas/powerwolf.png",
+    "resposta": "res1",
+    "res1": "PowerWolf",
+    "res2": "The White Buffalo",
+    "res3": "Sabaton",
+    "res4": "Iron Maiden"
+}];

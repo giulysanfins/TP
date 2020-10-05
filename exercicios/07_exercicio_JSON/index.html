@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="public/css/.css" rel="stylesheet">-->
+    <!--JQuery -->
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+
+    <link href="public/css/mystyle.css" rel="stylesheet">
+    <!--JSON-->
+    <script type="text/javascript" src="public/jsons/quiz.json" charset="utf-8"></script>
+    <!--JS-->
+    <script src="public/js/script.js"></script>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid backzin">
+            <img src="public/imgs/logo.png" class="img-fluid" style=" max-width: 5rem; max-height: 5rem;">
+        </div>
+    </header>
+
+    <!-- inicio cards -->
+    <div class="container-fluid teste">
+        <p class="text-light font-weight-bold text-center display-3">Selecione o quiz que deseja jogar</p>
+        <div class="row d-flex align-items-strch">
+            <!-- games -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/games.jpg" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">
+                    <div class="card-body rounded" style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            JOGOS
+                        </h5>
+                    </div>
+                    <a class="btn btn-info" id="quiz1" onclick="escolheJogo('games')">Jogar</a>
+                </div>
+            </div>
+            <!-- musica -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/music.jpg" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">
+                    <div class="card-body rounded" style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            MÚSICAS
+                        </h5>
+                    </div>
+                    <a class="btn btn-info" id="quiz1" onclick="escolheJogo('musicas')">Jogar</a>
+                </div>
+            </div>
+            <!-- filme e series -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/films.jpg" class="rounded-circle img-fluid max-width:33%" style="padding: 5%;">
+                    <div class="card-body rounded" style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            FILMES E SÉRIES
+                        </h5>
+                    </div>
+                    <a class="btn btn-info" id="quiz1" onclick="escolheJogo('filmes')">Jogar</a>
+                </div>
+            </div>
+            <!-- animes -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card border-0 bg-transparent">
+                    <img src="public/imgs/animes.jpg" class="rounded-circle img-fluid img-lg" style="padding: 5%;">
+                    <div class="card-body rounded" style="background-color: white;">
+                        <h5 class="card-title text-center">
+                            ANIMES
+                        </h5>
+                    </div>
+                    <a class="btn btn-info" id="quiz1" onclick="escolheJogo('animes')">Jogar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do cards -->
+
+</body>
+
+</html>
